@@ -35,6 +35,7 @@
                                     type="text"
                                     placeholder="Insira seu Nome"
                                     oninput="correctionName(this)"
+                                    required
                                 />
                             </div>
 
@@ -45,7 +46,7 @@
                                     placeholder="Insira seu RA"
                                     id="ra"
                                     oninput="correctionRA(this); validationRA(this)"
-
+                                    required
                                 />
                                 <p id="showResultRA"></p>
                             </div>
@@ -55,7 +56,7 @@
                                 <input
                                     type="date"
                                     placeholder="Insira sua data de nascimento"
-                                    
+                                    required
                                 />
                             </div>
 
@@ -67,7 +68,7 @@
                                     id="cpf"
                                     placeholder="Insira seu CPF"
                                     oninput="correctionCPF(this); validationCPF(this)"
-                                    
+                                    required
                                 />
                                 <p id="showResultCPF"></p>
                             </div>
@@ -80,6 +81,7 @@
                                     type="text"
                                     placeholder="Insira seu RG"
                                     oninput="correctionRG(this); validationRG(this)"
+                                    required
                                 />
                                 <p id="showResultRG"></p>
                             </div>
@@ -87,10 +89,11 @@
                             <div class="input-field">
                                 <label>Nota no vestibular</label>
                                 <input
-                                    id="nota"
+                                    id="grade"
                                     type="text"
                                     placeholder="Insira sua Nota"
                                     oninput="corretionGrade(this); validationGrade(this)"
+                                    required
                                 />
                                 <p id="showResultGrade"></p>
                             </div>
@@ -100,7 +103,7 @@
                                 <input
                                     type="file"
                                     placeholder="Insira um documento em arquivo"
-                                    
+                                    required
                                 />
                             </div>
 
@@ -111,8 +114,11 @@
                                     name="email"
                                     id="email"
                                     placeholder="Insira seu email"
-                                    
+                                    oninput="validationEmail(this)"
+                                    required
                                 />
+                                <p id="showResultEmail"></p>
+
                             </div>
 
                             <div class="input-field">
@@ -121,8 +127,10 @@
                                     id="telefone"
                                     type="text"
                                     placeholder="Insira seu numero de telefone"
-                                    oninput="corretionPhone(this)"
+                                    oninput="correctionPhone(this); validationPhone(this)"
+                                    required
                                 />
+                                <p id="showResultPhone"></p>
                             </div>
 
                             <div class="input-field">
@@ -152,8 +160,10 @@
                                 <input
                                     type="text"
                                     placeholder="Insira a Região"
-                                    
+                                    oninput="correctionStreet(this)"
+                                    required
                                 />
+
                             </div>
 
                             <div class="input-field">
@@ -161,7 +171,7 @@
                                 <input
                                     type="number"
                                     placeholder="Numero de endereço"
-                                    
+                                    required
                                 />
                             </div>
 
@@ -170,8 +180,10 @@
                                 <input
                                     type="text"
                                     placeholder="Insira seu bairro"
-                                    
+                                    oninput="correctionDistrict(this)"
+                                    required
                                 />
+
                             </div>
 
                             <div class="input-field">
@@ -179,7 +191,7 @@
                                 <input
                                     type="text"
                                     placeholder="Informação extre do endereço"
-                                    
+                                    oninput="correctionComplement(this)"
                                 />
                             </div>
 
@@ -188,8 +200,10 @@
                                 <input
                                     type="text"
                                     placeholder="Insira o CEP do endereço"
-                                    
+                                    oninput="correctionCEP(this); validationCEP(this)"
+                                    required
                                 />
+                                <p id="showResultCEP"></p>
                             </div>
 
                             <div class="input-field">
@@ -240,7 +254,8 @@
                                 <input
                                     type="text"
                                     placeholder="Insira sua cidade por extenso"
-                                    
+                                    oninput="correctionCity(this)"
+                                    required
                                 />
                             </div>
                         </div>
